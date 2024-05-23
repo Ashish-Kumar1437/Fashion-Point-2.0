@@ -1,0 +1,101 @@
+.address-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem 18rem;
+  & > a {
+    color: #00b4d8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+  }
+
+  & > .heading {
+    font-size: 1.75rem;
+    position: relative;
+    width: fit-content;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      background-color: #ffd500;
+      height: 0.15rem;
+      width: 70%;
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    margin-left: 1.5rem;
+    .field {
+      .field {
+        width: 100%;
+      }
+      .input-wrapper {
+        padding: 0;
+        .input-label {
+          left: 0.5rem;
+          background-color: white;
+        }
+
+        & > input {
+          border-radius: 0.25rem;
+          padding: 0.8rem 0.75rem 0.5rem;
+        }
+      }
+
+      & > label {
+        font-size: 0.9rem;
+        color: #999;
+      }
+
+      & > .chips {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.25rem 0;
+
+        .chip {
+          padding: 0.4rem 0.85rem;
+          border-radius: 1rem;
+          margin: 0;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.4);
+          border: 1px solid rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+
+          &.selected {
+            color: #42a2a2;
+            border-color: #42a2a2;
+          }
+        }
+      }
+    }
+
+    & > button {
+      width: max-content;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      color: white;
+      background: #00b4d8;
+      border: none;
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.account-wrapper {
+  padding: 3rem 12rem;
+
+  & > .heading {
+    font-size: 2.75rem;
+    position: relative;
+    width: fit-content;
+    font-weight: 900;
+
+    &::after {
+      content: "";
+      background-color: #00b4d8;
+      height: 0.2rem;
+      width: 70%;
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .accountTabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1rem 1rem;
+    border-bottom: 2px solid #d5d5d5;
+    margin: 5rem 0;
+    width: max-content;
+
+    .tab {
+      padding: 0 1rem;
+      text-decoration: none;
+      min-height: 4rem;
+
+      .heading {
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 0.3rem 0;
+        gap: 0.25rem;
+        font-size: 1.15rem;
+      }
+
+      .desc {
+        color: #a9a9a9;
+        font-size: 0.75rem;
+      }
+    }
+    .line {
+      width: 0.1rem;
+      height: 100v;
+      background: #d5d5d5;
+    }
+  }
+
+  .backtoshoping {
+    display: flex;
+    gap: 3rem;
+    .left {
+      width: 30%;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-direction: column;
+
+      & > p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #aaa;
+      }
+
+      & > a {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: 1px solid #00b4d8;
+        color: #00b4d8;
+        border-radius: 0.25rem;
+        font-size: 1.25rem;
+        width: fit-content;
+      }
+    }
+    .right {
+      width: 50%;
+    }
+  }
+}
